@@ -5,13 +5,13 @@ name: A Basic Workflow
 on:
 
   # Triggers the workflow on push and pull request events only for the "main" branch
-  push:
-    branches: ["main"]
-    # branches-ignore: ["ignore"]
-    # paths: ".github/*"
+  # push:
+  #   branches: ["main"]
+  #   # branches-ignore: ["ignore"]
+  #   # paths: ".github/*"
 
-  pull_request:
-    branches: ["main"]
+  # pull_request:
+  #   branches: ["main"]
 
   # Allows you to run this workflow manually from Actions tab
   workflow_dispatch:
