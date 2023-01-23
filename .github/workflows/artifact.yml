@@ -11,7 +11,7 @@ jobs:
       - name: "Create a local file"
         run: echo "My name is Ankus Nayak." > file1.txt
 
-      - uses: action/upload-artifact@v3
+      - uses: action/upload-artifact@v2
         with:
           name: file
           path: file1.txt
