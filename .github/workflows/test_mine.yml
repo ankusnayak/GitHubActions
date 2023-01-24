@@ -16,9 +16,9 @@ jobs:
         id: branch-name
         uses: tj-actions/branch-name@v6
 
-      # - name: Create Github deployment for '${{ steps.branch-name.outputs.current_branch }}'
-      #   run: |
-      #     echo "Name: ${{ steps.branch-name.outputs.current_branch }}"
+      - name: Create Github deployment for '${{ steps.branch-name.outputs.current_branch }}'
+        run: |
+          echo "Name: ${{ steps.branch-name.outputs.current_branch }}"
 
       # - name: Create Github deployment for '${{ steps.branch-name.outputs.current_branch }}'
       #   uses: chrnorm/deployment-action@v2
