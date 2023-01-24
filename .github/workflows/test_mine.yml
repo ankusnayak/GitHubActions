@@ -1,0 +1,23 @@
+name: create-deployment
+
+on:
+  workflow_dispatch:
+
+  push:
+    - 'main'
+    - 'stage'
+    - 'prod'
+  
+jobs:
+  create-deplyment:
+    name: Create deployment for branch
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get branch name
+        id: branch-name
+        uses: tj-actions/branch-name@v6
+
+      - name: Create Github deployment for '${{ steps.branch-name.outputs.current_branch }}'
+        run: |
+          echo "Name: ${{ steps.branch-name.outputs.current_branch }}"
+
