@@ -20,12 +20,12 @@ jobs:
       #   run: |
       #     echo "Name: ${{ steps.branch-name.outputs.current_branch }}"
 
-      - name: Create Github deployment for '${{ steps.branch-name.outputs.current_branch }}'
-        uses: chrnorm/deployment-action@v2
-        id: deployment
-        # with:
-        #   token: "${{ secrets.CI_GH_TOKEN }}"
-        #   environment: ${{ steps.branch-name.outputs.current_branch }}
-        #   ref: ${{ steps.branch-name.outputs.current_branch }}
+      # - name: Create Github deployment for '${{ steps.branch-name.outputs.current_branch }}'
+      #   uses: chrnorm/deployment-action@v2
+      #   id: deployment
+      #   # with:
+      #   #   token: "${{ secrets.CI_GH_TOKEN }}"
+      #   #   environment: ${{ steps.branch-name.outputs.current_branch }}
+      #   #   ref: ${{ steps.branch-name.outputs.current_branch }}
 
 
