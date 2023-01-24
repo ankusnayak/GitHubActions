@@ -1,8 +1,6 @@
 name: create-deployment
 
 on:
-  workflow_dispatch:
-
   push:
     - 'main'
     - 'stage'
