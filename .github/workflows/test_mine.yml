@@ -2,9 +2,10 @@ name: create-deployment
 
 on:
   push:
-    - 'main'
-    - 'stage'
-    - 'prod'
+    branches:
+      - 'main'
+      - 'stage'
+      - 'prod'
   
 jobs:
   create-deplyment:
